@@ -14,7 +14,7 @@ from timeit import default_timer as timer
 BOT_PREFIX = ("!")
 
 # Get at discordapp.com/developers/applications/me
-TOKEN = ""
+TOKEN = "NTU4ODQ0MzI2OTQ0MTc4MjE3.XuPUkg.XzuSHX2mRgc0wRvKm3K8fwmt1Ac"
 
 # Math quiz variables
 quizzing = False
