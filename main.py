@@ -14,7 +14,8 @@ from timeit import default_timer as timer
 BOT_PREFIX = ("!")
 
 # Get at discordapp.com/developers/applications/me
-TOKEN = "NTU4ODQ0MzI2OTQ0MTc4MjE3.XuPUkg.XzuSHX2mRgc0wRvKm3K8fwmt1Ac"
+TOKEN = ""
+
 
 # Math quiz variables
 quizzing = False
@@ -265,7 +266,7 @@ async def quiztimerecords(ctx):
     global levelRecordHolders
     fileLoad()
     output = "**QUIZ LEVEL TIME RECORDS**\n-----------------------------------------------\n"
-    for i in range(len(levelRecords)):
+    for i in range(0, len(levelRecords)):
         output += "Level " + str(int(i + 1)) + ": " + str(levelRecords[i]) + "s"
         if levelRecordHolders[i] == 0 or levelRecordHolders[i] is None:
             output += ", held by no one\n"
