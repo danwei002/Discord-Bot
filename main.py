@@ -23,7 +23,7 @@ baseQuizScore = 1
 quizSuccessScore = 1
 quizStartTime = 0
 quizEndTime = 0
-ans = 0.0
+ans = 0.00
 
 # Type test variables
 typing = False
