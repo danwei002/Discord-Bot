@@ -9,8 +9,6 @@ from timeit import default_timer as timer
 from discord import Game
 from discord.ext.commands import Bot
 from discord.ext import commands
-from main import cardNames
-from main import suits
 
 
 class Randomizers(commands.Cog):
@@ -106,14 +104,6 @@ class Randomizers(commands.Cog):
             await ctx.send("No choices detected.")
             return
         await ctx.send("The chosen item is: " + random.choice(choices) + ".")
-
-    @commands.command(description="Draw a random card.",
-                      brief="Draw a random card",
-                      pass_context=True)
-    async def randcard(self, ctx):
-        theCard = random.choice(cardNames) + random.choice(suits)
-        await ctx.send(ctx.author.mention + " " + theCard)
-
 
 
 def setup(client):

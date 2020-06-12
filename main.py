@@ -14,7 +14,7 @@ from timeit import default_timer as timer
 BOT_PREFIX = ("!")
 
 # Get at discordapp.com/developers/applications/me
-TOKEN = ""
+TOKEN = "NTU4ODQ0MzI2OTQ0MTc4MjE3.XuPPbQ.5tRNdigdomsbNKgUxmYZ7keWHv0"
 
 # Math quiz variables
 quizzing = False
@@ -657,10 +657,5 @@ async def on_message(message):
             if index < len(data) and index < 1000:
                 await message.channel.send("Hi " + response + ", I'm Dad.")
 
-async def blackjackLoop():
-    if blackjacking:
-        processBets()
 
-
-client.loop.create_task(blackjackLoop())
 client.run(TOKEN)
