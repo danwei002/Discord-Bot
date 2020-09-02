@@ -1,5 +1,6 @@
 # Discord-Bot
-A discord bot with numerous functionalities. The bot is written in Python and uses JSON files for persistent data storage.
+A discord bot with numerous functionalities. The bot is written in Python and uses JSON files for persistent data storage. I created this mainly
+to learn how to use the discord.py library.
 
 Some examples of the bot's functionalities:
 - Mathematical calculations, such as prime factorization
